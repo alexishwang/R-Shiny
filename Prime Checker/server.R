@@ -4,7 +4,6 @@ library(shiny)
 shinyServer(function(input, output) {
    
   output$is_prime <- renderDataTable({
-    datatable(iris)
   })
 
   output$prime_checker <- renderUI({
