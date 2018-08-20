@@ -1,3 +1,3 @@
 # R-Shiny
 
-# Prime Checker
+## Prime Checker
