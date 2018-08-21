@@ -28,7 +28,7 @@ shinyServer(function(input, output) {
 is_prime <- function(num) {
   # Base case
   if (num < 2) return(FALSE)
-  if (num == 2) return(FALSE)
+  if (num == 2) return(TRUE)
   
   for (div in 2 : (num-1)) {
     if (num %% div == 0) {
