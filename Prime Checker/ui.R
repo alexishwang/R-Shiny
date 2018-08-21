@@ -2,15 +2,14 @@ library(shiny)
 library(tidyverse)
 library(DT)
 shinyUI(fluidPage(
-  
-  titlePanel("Prime number Checker"),
-    sidebarPanel(
+    fluidRow(
+      titlePanel("Prime number Checker"),
       selectInput("prime", "Select the type of number",
                   choice = c("Prime", 'Composite')),
       sliderInput("range", "Range of numbers",
-                  min = 1, max = 1000, value = c(3,75))
+                  min = 1, max = 500, value = c(100,200))
   ),
-  mainPanel(
+  fluidRow(
     htmlOutput("prime_checker"),
     DTOutput("is_prime")
   )
